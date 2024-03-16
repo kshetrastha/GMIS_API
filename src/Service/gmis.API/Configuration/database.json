@@ -1,0 +1,7 @@
+{
+  "DatabaseSettings": {
+    "DBProvider": "mssql",
+    "ConnectionString": "Server=103.45.245.158\\GDC9AKADE4\\MSSQLSERVERSPAIN,1433;Initial Catalog=Marketing;user id=poweruser;password=G@MiSMm;TrustServerCertificate=True;Trusted_Connection=false;MultipleActiveResultSets=true"
+    //"ConnectionString": "Server=.;Initial Catalog=Marketing;Integrated Security = True;TrustServerCertificate=True;MultipleActiveResultSets=true"
+  }
+}

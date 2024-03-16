@@ -1,0 +1,7 @@
+{
+  "SwaggerSettings": {
+    "AuthenticationScheme": "Jwt",
+    "HeaderName": "Authorization",
+    "BearerPrefix": "Bearer"
+  }
+}

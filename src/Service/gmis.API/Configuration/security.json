@@ -1,0 +1,11 @@
+{
+  "SecuritySettings": {
+    "Provider": "Jwt",
+    "RequireConfirmedAccount": true,
+    "JwtSettings": {
+      "key": "NEEDTOADDSOMEKEYSHERETOGENERATETOKEN",
+      "tokenExpirationInMinutes": 60,
+      "refreshTokenExpirationInDays": 7
+    }
+  }
+}

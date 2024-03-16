@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\Infrastructure\**" />
+    <EmbeddedResource Remove="Contracts\Infrastructure\**" />
+    <None Remove="Contracts\Infrastructure\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.8.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\gmis.Domain\gmis.Domain.csproj" />
+    <ProjectReference Include="..\gmis.Shared\gmis.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
