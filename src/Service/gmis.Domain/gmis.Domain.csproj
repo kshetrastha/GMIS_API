@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\gmis.Shared\gmis.Shared.csproj" />
-    <ProjectReference Include="..\hotelBooking.Shared\gmis.Shared.csproj" />
+    <ProjectReference Include="..\gmis.Shared\gmis.Shared.csproj" />
   </ItemGroup>
 
 </Project>

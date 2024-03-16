@@ -4,11 +4,6 @@ using gmis.Application.Contracts.Persistence.Base;
 using gmis.Application.Features.LOF.Queries.GetAllListAsync.Model;
 using gmis.Shared.ResponseMessage;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace gmis.Application.Features.LOF.Queries.GetAllListAsync
 {

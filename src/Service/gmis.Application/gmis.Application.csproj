@@ -27,9 +27,13 @@
 
   </ItemGroup>
 
+ 
+
   <ItemGroup>
     <ProjectReference Include="..\gmis.Domain\gmis.Domain.csproj" />
     <ProjectReference Include="..\gmis.Shared\gmis.Shared.csproj" />
   </ItemGroup>
+
+
 
 </Project>

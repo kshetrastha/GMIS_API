@@ -10,6 +10,7 @@ using System.Reflection;
 using gmis.Infrastructure.Auditing;
 using gmis.Infrastructure.Converter;
 using gmis.Domain.Entities.LineOfBusiness;
+using gmis.Domain.Entities.Industry;
 
 namespace gmis.Infrastructure.Persistence.Context
 {
@@ -20,6 +21,7 @@ namespace gmis.Infrastructure.Persistence.Context
         public DbSet<Trail> AuditTrails => Set<Trail>();
         //public DbSet<UserDetail> UserDetails => Set<UserDetail>();
         public DbSet<LineOfBusiness> lineOfBusinesses => Set<LineOfBusiness>();
+        public DbSet<Industry> Industries => Set<Industry>();
 
 
   
