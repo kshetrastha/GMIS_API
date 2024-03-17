@@ -2,14 +2,11 @@
 using gmis.Application.Features.LOB.Command.UpdateLineOfBusiness;
 using gmis.Application.Features.LOB.Queries.GetPaginatedLOB;
 using gmis.Application.Features.LOF.Queries.GetAllListAsync;
-using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace gmis.API.Controllers.LOB
 {
-    [Route("gmis/api/[controller]")]
+    [Route("/api/[controller]")]
     [ApiController]
     public class LOBController : BaseController
     {

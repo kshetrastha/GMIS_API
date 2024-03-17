@@ -6,6 +6,7 @@ using gmis.Application.Contracts.Persistence;
 using gmis.Infrastructure.Repositories.LOF;
 using gmis.Application.Contracts.Persistence.Industries;
 using gmis.Infrastructure.Repositories.Industries;
+using gmis.Infrastructure.Repositories.Notes;
 
 namespace gmis.Infrastructure.Repositories.Base
 {
@@ -31,7 +32,6 @@ namespace gmis.Infrastructure.Repositories.Base
         #endregion
         public IIndustriesRepository IndustriesRepository =>  new IndustryRepository(_configuration, _repositoryContext);
 
-
-
+        public INotesRepository NotesRepository =>  new NotesRepository(_configuration,_repositoryContext);
     }
 }

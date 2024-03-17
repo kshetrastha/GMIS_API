@@ -9,6 +9,8 @@ using gmis.Domain.Entities.Industry;
 using gmis.Domain.Entities.Industry.DataTransferObjects;
 using gmis.Domain.Entities.LineOfBusiness;
 using gmis.Domain.Entities.LineOfBusiness.DataTransferObjects;
+using gmis.Domain.Entities.Notes;
+using gmis.Domain.Entities.Notes.DataTransferObjects;
 
 namespace gmis.Application.Common.Mapping
 {
@@ -25,6 +27,8 @@ namespace gmis.Application.Common.Mapping
             CreateMap<CreateIndustryCommand, Industry>().ReverseMap();
             CreateMap<UpdateIndustryCommand, Industry>().ReverseMap();
             CreateMap<DeleteIndustryCommand, Industry>().ReverseMap();
+
+            CreateMap<NotesDtos, Note>().ReverseMap();
 
         }
 

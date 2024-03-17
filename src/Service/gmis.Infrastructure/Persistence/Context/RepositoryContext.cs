@@ -11,6 +11,7 @@ using gmis.Infrastructure.Auditing;
 using gmis.Infrastructure.Converter;
 using gmis.Domain.Entities.LineOfBusiness;
 using gmis.Domain.Entities.Industry;
+using gmis.Domain.Entities.Notes;
 
 namespace gmis.Infrastructure.Persistence.Context
 {
@@ -22,9 +23,11 @@ namespace gmis.Infrastructure.Persistence.Context
         //public DbSet<UserDetail> UserDetails => Set<UserDetail>();
         public DbSet<LineOfBusiness> lineOfBusinesses => Set<LineOfBusiness>();
         public DbSet<Industry> Industries => Set<Industry>();
+        public virtual DbSet<Note> Notes => Set<Note>();
 
 
-  
+
+
         public RepositoryContext(DbContextOptions<RepositoryContext> options, IHttpContextAccessor httpContextAccessor, ICurrentUser currentUser) : base(options)
         {
             _httpContextAccessor = httpContextAccessor;

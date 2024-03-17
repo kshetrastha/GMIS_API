@@ -7,12 +7,13 @@ namespace gmis.Application.Contracts.Persistence.Base
     {
         Task SaveAsync();
         IDbContextTransaction BeginTran();
-  
+
 
         #region Line Of Business
         ILineOfBusinessRepository LineOfBusinessRepository { get; }
         #endregion
 
         IIndustriesRepository IndustriesRepository { get; }
+        INotesRepository NotesRepository { get; }
     }
 }
