@@ -16,4 +16,8 @@
     <ProjectReference Include="..\gmis.Shared\gmis.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\CommonDto\" />
+  </ItemGroup>
+
 </Project>

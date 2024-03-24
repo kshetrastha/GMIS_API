@@ -5,6 +5,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Auth\JWT\**" />
+    <EmbeddedResource Remove="Auth\JWT\**" />
+    <None Remove="Auth\JWT\**" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.24" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.14" />
@@ -22,8 +28,5 @@
   <ItemGroup>
     <ProjectReference Include="..\gmis.Application\GMIS.Application.csproj" />
     <ProjectReference Include="..\gmis.Shared\GMIS.Shared.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Auth\JWT\" />
   </ItemGroup>
 </Project>

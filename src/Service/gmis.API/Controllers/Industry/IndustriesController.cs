@@ -32,8 +32,10 @@ namespace gmis.API.Controllers.Industry
             return Ok(await Mediator.Send(command));
         }
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Update([FromBody] DeleteIndustryCommand command)
+        public async Task<IActionResult> Delete(int id, [FromBody] DeleteIndustryCommand command)
         {
+            if (command.IndustryId == 0)
+                command.IndustryId = id;
             return Ok(await Mediator.Send(command));
         }
     }
