@@ -24,10 +24,6 @@ namespace gmis.Infrastructure.Persistence.Context
         public DbSet<LineOfBusiness> lineOfBusinesses => Set<LineOfBusiness>();
         public DbSet<Industry> Industries => Set<Industry>();
         public virtual DbSet<Note> Notes => Set<Note>();
-
-
-
-
         public RepositoryContext(DbContextOptions<RepositoryContext> options, IHttpContextAccessor httpContextAccessor, ICurrentUser currentUser) : base(options)
         {
             _httpContextAccessor = httpContextAccessor;
