@@ -30,8 +30,8 @@
  
 
   <ItemGroup>
-    <ProjectReference Include="..\gmis.Domain\gmis.Domain.csproj" />
-    <ProjectReference Include="..\gmis.Shared\gmis.Shared.csproj" />
+    <ProjectReference Include="..\gmis.Domain\GMIS.Domain.csproj" />
+    <ProjectReference Include="..\gmis.Shared\GMIS.Shared.csproj" />
   </ItemGroup>
 
 

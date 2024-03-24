@@ -20,8 +20,8 @@
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\gmis.Application\gmis.Application.csproj" />
-    <ProjectReference Include="..\gmis.Shared\gmis.Shared.csproj" />
+    <ProjectReference Include="..\gmis.Application\GMIS.Application.csproj" />
+    <ProjectReference Include="..\gmis.Shared\GMIS.Shared.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Auth\JWT\" />

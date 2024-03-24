@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\gmis.Shared\gmis.Shared.csproj" />
+    <ProjectReference Include="..\gmis.Shared\GMIS.Shared.csproj" />
     <ProjectReference Include="..\gmis.Shared\gmis.Shared.csproj" />
   </ItemGroup>
 
