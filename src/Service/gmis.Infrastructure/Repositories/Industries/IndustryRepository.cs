@@ -1,4 +1,5 @@
-﻿using gmis.Application.Contracts.Persistence.Industries;
+﻿using Dapper;
+using gmis.Application.Contracts.Persistence.Industries;
 using gmis.Application.Exceptions;
 using gmis.Domain.Entities.Industry;
 using gmis.Infrastructure.Persistence.Context;
@@ -18,7 +19,14 @@ namespace gmis.Infrastructure.Repositories.Industries
         {
             try
             {
-                return await FindAll(trackChanges).ToListAsync();
+                var procedure = "[dbo].[spIndustrySelect]";
+                DynamicParameters prms = new DynamicParameters();
+                prms.Add("Industry", 0);
+                using (var connection = CreateConnection())
+                {
+                    return (await connection.QueryAsync<Industry>(procedure, prms)).ToList();
+                }
+                //return await FindAll(trackChanges).ToListAsync();
             }
             catch (Exception ex)
             {
